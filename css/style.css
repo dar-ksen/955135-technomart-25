@@ -1,0 +1,431 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Button */
+.btn {
+    font: inherit;
+    font-weight: 700;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: #ca2c37;
+}
+
+.btn:active{
+    background-color: #ba2732;
+}
+
+/* Header */
+.main-header {
+    background-color: #f4f7f9;
+}
+
+.header-top{
+    font-size: 17px;
+    line-height: 18px;
+
+    color: #ffffff;
+    background-color:#32425c;
+}
+
+.header-top a {
+    color: #ffffff;
+}
+
+.header-logo{
+    background-color: #ee3643;
+}
+
+.header-logo:hover,
+.header-logo:focus{
+    background-color: #ca2c37;
+}
+
+.header-logo:active{
+    background-color: #ba2732;
+}
+
+.search-input{
+    font: inherit;
+    color: #ffffff;
+
+    background-color: #32425c;
+    border: none;
+}
+
+.search-input:focus{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.header-list {
+    list-style: none;
+    /*reset-list для ul*/
+}
+
+.header-list a{
+    background-color: #293449;
+}
+/* Проверить*/
+.header-list a:active {
+    color:white;
+    background-color: #293449;
+}
+/*Повесить класс btn-order*/
+.btn-order{
+    color: #ffffff;
+    background-color: #63a63e;
+    font-size: 15px; /*Поправить*/
+}
+
+.btn-order:active{
+    color: rgba(255, 255, 255, 0.50);
+    background-color: #518534;
+}
+
+.header-content h1{
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ee3643;
+}
+
+.header-contacts{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.header-contacts a{
+    font-size: 21px;
+    line-height:21px;
+    color: #ee3643;
+    border: 3px solid #ffffff;
+}
+
+.login-link,
+.check-in{
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.login-link:hover,
+.login-link:focus,
+.check-in:hover,
+.check-in:focus{
+    color: #ee3643;
+}
+
+.login-link:active,
+.check-in:active{
+    color: rgba(0, 0, 0, 0.30);
+}
+/* user navigation catalog */
+.profile-container{
+    background-color: #ffffff;
+}
+
+.profile {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.profile:active{
+    color: rgba(0, 0, 0, 0.30);
+}
+/* вопрос как задать цвет svg. Убрать текст получится только с flex? */
+
+.logout{
+    background-image: url(../img/icon/icon-logout.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+/*через opacity*/
+
+.user-link{
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #32425c;
+}
+
+.user-link:hover,
+.user-link:focus{
+    color: #ee3643
+}
+
+.user-link:active{
+    color: rgba(50, 66, 92, 0.30);
+}
+/* user navigation catalog */
+.main-navigation{
+    margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a{
+    color: #ffffff;
+
+    background-color: #32425c;
+    box-shadow: inset 0 -5px 0  #293449;
+}
+
+.site-navigation a:hover{
+    background-color: #293449;
+}
+.site-navigation a:active{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #293449;
+}
+
+/* Main */
+.index-columns h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.index-columns p{
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.features .trans-comp{
+    list-style: none;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/* Main catalog */
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a{
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', Arial, sans-serif;
+
+    color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
+
+main .catalog-header{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color:#32425c;
+    background-color: #f2f6f8;
+}
+.filter {
+    font-family: 'PT Sans', Arial, sans-serif;
+}
+.filter h3{
+    font-size: 13px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    background-color: #f7f3ec;
+
+}
+
+.filter fieldset{
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.filter legend{
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.filter ul{
+    list-style: none;
+}
+
+.filter .filter-option{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.filter-input:disabled + label{
+    opacity: 0.4;
+}
+
+.filter .filter-btn {
+    font: inherit;
+    font-size: 13px;
+    line-height: 18px;
+
+    text-align: center;
+    color: #000000;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+}
+
+.catalog-list{
+    list-style: none;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.catalog-item {
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-item-title {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Footer*/
+.main-footer{
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.footer-logo{
+    background-color: #ee3643;
+}
+
+.footer-logo:hover,
+.footer-logo:focus{
+    background-color: #ca2c37;
+}
+
+.footer-logo:active{
+    background-color: #ba2732;
+}
+
+.footer-contacts{
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-contacts a{
+    color: #ffffff;
+}
+
+.footer-nav{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-nav-list,
+.footer-offer-list{
+    list-style: none;
+}
+
+.footer-nav-list a{
+    color: #ffffff;
+}
+
+.footer-offer-list a{
+    color: #ffd180;
+}
+
+.footer-copyright{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.social-list{
+    list-style: none;
+}
+
+.btn-feedback{
+    color: #ffd180;
+}
+
+.btn-feedback:hover,
+.btn-feedback:focus{
+    text-decoration: underline;
+}
+
+.btn-feedback:active{
+    color: #ee3643;
+}
+
+/* Modal */
+.modal{
+    display: none;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.modal h2{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.modal-write-us input[type="text"],
+.modal-write-us input[type="email"],
+.modal-write-us textarea{
+    font:inherit;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+
+    background-color: #ffffff;
+    border: 2px solid #dee3e4;
+    border-radius: 2px;
+}
+
+.modal-write-us label{
+    font-size: 18px;
+    line-height: 18px;
+}

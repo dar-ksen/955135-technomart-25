@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -24,21 +27,23 @@
                <a class="header-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a><br>
                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            </address>
-           <div class="user-navigation">
-               <a class="profile" href="#">Равшан Джамшутович</a>
-               <a class="logout" href="#">Выйти</a>
-               <a class="user-link" href="#">Мои заказы</a>
-               <a class="user-link" href="#">Личный кабинет</a>
+           <div class="account">
+               <div class="profile-container">
+                   <a class="profile" href="#">Равшан Джамшутович</a>
+                   <a class="logout" href="#"><span class="visually-hidden">Выйти</span></a>
+               </div>
+               <a class="account-link" href="#">Мои заказы</a>
+               <a class="account-link" href="#">Личный кабинет</a>
            </div>
        </div>
        <nav class="main-navigation">
            <ul class="site-navigation">
-               <li><a href="#">Главная</a></li>
-               <li><a href="about-us.html">Компания</a></li>
-               <li><a href="catalog.html">Каталог</a></li>
-               <li><a href="news.html">Новости</a></li>
-               <li><a href="special-offers.html">Спецпредложения</a></li>
-               <li><a href="contacts.html">Контакты</a></li>
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="#">Компания</a></li>
+               <li><a href="#">Каталог</a></li>
+               <li><a href="#">Новости</a></li>
+               <li><a href="#">Спецпредложения</a></li>
+               <li><a href="#">Контакты</a></li>
            </ul>
        </nav>
    </header>
@@ -50,9 +55,9 @@
            <li><a href="#">Инструменты</a></li>
            <li><a href="#">Перфораторы</a></li>
        </ul>
-       <h2>Перфораторы</h2>
+       <h2 class="catalog-header">Перфораторы</h2>
        <section class="filter">
-           <h3 class="visually-hidden">Фильтр товаров</h3>
+           <h3>Фильтр:</h3>
            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                <fieldset>
                    <legend>Производители:</legend>
@@ -70,7 +75,7 @@
                            <label for="filter-makita">Makita</label>
                        </li>
                        <li class="filter-option">
-                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                           <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt" disabled>
                            <label for="filter-dewalt">Dewalt</label>
                        </li>
                        <li class="filter-option">
@@ -92,7 +97,7 @@
                        </li>
                    </ul>
                </fieldset>
-               <button class="filter-btn btn" type="submit">Показать</button>
+               <button class="filter-btn" type="submit">Показать</button>
            </form>
        </section> <!--/.filter-->
 
@@ -100,7 +105,7 @@
            <h3 class="visually-hidden">Список инструментов</h3>
            <ul class="catalog-list">
                <li class="catalog-item new">
-                   <h4><a href="#">Перфоратор BOSCH BFG 3000</a></h4>
+                   <h4><a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 3000</a></h4>
                    <a href="#">
                        <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                    </a>
@@ -112,7 +117,7 @@
                    <p class="price">15500 Р.</p>
                </li>
                <li class="catalog-item new">
-                   <h4><a href="#">Перфоратор BOSCH BFG 3000</a></h4>
+                   <h4><a class="catalog-item-name" href="#">Перфоратор BOSCH BFG 3000</a></h4>
                    <a href="#">
                        <img src="img/perf_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                    </a>
