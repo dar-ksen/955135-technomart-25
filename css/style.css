@@ -14,6 +14,10 @@ a {
     text-decoration: none;
 }
 
+.reset-list{
+    list-style: none;
+}
+
 /* Button */
 .btn {
     font: inherit;
@@ -36,6 +40,46 @@ a {
     background-color: #ba2732;
 }
 
+.btn-buy {
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: none;
+
+    background-color: #63a63e;
+    border-radius: 2px;
+    box-shadow: inset 0 -3px 0  #367315;
+}
+
+.btn-buy:hover,
+.btn-buy:focus {
+    background-color: #5fbb2d;
+}
+
+.btn-buy:active {
+    background-color: #367315;
+}
+
+.btn-bookmark {
+    font-weight: 400;
+    color: #32425c;
+    text-transform: none;
+    background-color: #ffffff;
+    border: 3px solid #63a63e;
+    border-radius: 2px;
+}
+
+.btn-bookmark:hover,
+.btn-bookmark:focus{
+    background-color: #ffffff;
+    border-color: #32425c;
+}
+
+.btn-bookmark:active{
+    background-color: #ffffff;
+    color: #c1c6ce;
+    border-color: #c1c6ce;
+}
+
 /* Header */
 .main-header {
     background-color: #f4f7f9;
@@ -46,7 +90,7 @@ a {
     line-height: 18px;
 
     color: #ffffff;
-    background-color:#32425c;
+    background-color:#293449;
 }
 
 .header-top a {
@@ -70,36 +114,46 @@ a {
     font: inherit;
     color: #ffffff;
 
-    background-color: #32425c;
+    background-color: #293449;
     border: none;
 }
 
-.search-input:focus{
+.search-input:hover{
+    background-color: #212a3a;
+}
+
+.search-input:active,
+.search-input:focus {
     color: #000000;
     background-color: #ffffff;
 }
 
-.header-list {
-    list-style: none;
-    /*reset-list для ul*/
-}
 
 .header-list a{
     background-color: #293449;
 }
-/* Проверить*/
-.header-list a:active {
-    color:white;
-    background-color: #293449;
-}
-/*Повесить класс btn-order*/
-.btn-order{
-    color: #ffffff;
-    background-color: #63a63e;
-    font-size: 15px; /*Поправить*/
+
+.header-list a:hover,
+.header-list a:focus{
+    background-color: #212a3a;
 }
 
-.btn-order:active{
+.header-list a:active {
+    color: rgba(255, 255, 255, 0.60);
+    background-color: #161d29;
+}
+
+.header-list .btn-order{
+    color: #ffffff;
+    background-color: #63a63e;
+}
+
+.header-list .btn-order:hover,
+.header-list .btn-order:focus{
+    background-color: #5fbb2d;
+}
+
+.header-list .btn-order:active{
     color: rgba(255, 255, 255, 0.50);
     background-color: #518534;
 }
@@ -146,7 +200,7 @@ a {
 .check-in:active{
     color: rgba(0, 0, 0, 0.30);
 }
-/* user navigation catalog */
+
 .profile-container{
     background-color: #ffffff;
 }
@@ -161,31 +215,37 @@ a {
 .profile:active{
     color: rgba(0, 0, 0, 0.30);
 }
-/* вопрос как задать цвет svg. Убрать текст получится только с flex? */
 
 .logout{
+    display: block;/* Для проверки */
+    font-size: 0;
     background-image: url(../img/icon/icon-logout.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: 0.5;
 }
-/*через opacity*/
 
-.user-link{
+.logout:hover,
+.logout:focus {
+    opacity: 1;
+}
+
+.account-link{
     font-size: 16px;
     line-height: 18px;
     text-decoration: underline;
     color: #32425c;
 }
 
-.user-link:hover,
-.user-link:focus{
+.account-link:hover,
+.account-link:focus{
     color: #ee3643
 }
 
-.user-link:active{
+.account-link:active{
     color: rgba(50, 66, 92, 0.30);
 }
-/* user navigation catalog */
+
 .main-navigation{
     margin-bottom: 60px;
     font-size: 17px;
@@ -193,9 +253,6 @@ a {
     color: #ffffff;
 }
 
-.site-navigation {
-    list-style: none;
-}
 
 .site-navigation a{
     color: #ffffff;
@@ -227,16 +284,11 @@ a {
 }
 
 .features .trans-comp{
-    list-style: none;
     font-size: 18px;
     line-height: 20px;
 }
 
 /* Main catalog */
-.breadcrumbs {
-    list-style: none;
-}
-
 .breadcrumbs a{
     font-size: 13px;
     line-height: 18px;
@@ -283,10 +335,6 @@ main .catalog-header{
     font-weight: 700;
 }
 
-.filter ul{
-    list-style: none;
-}
-
 .filter .filter-option{
     font-size: 15px;
     line-height: 20px;
@@ -296,7 +344,7 @@ main .catalog-header{
     opacity: 0.4;
 }
 
-.filter .filter-btn {
+.filter-btn {
     font: inherit;
     font-size: 13px;
     line-height: 18px;
@@ -312,13 +360,17 @@ main .catalog-header{
 }
 
 .catalog-list{
-    list-style: none;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: 700;
 }
 
 .catalog-item {
     border: 1px solid #e5e5e5;
+}
+
+.catalog-item:hover {
+    border-color:transparent;
+    box-shadow: 0px 0px 25px 11px rgba(41,52,73,0.46);
 }
 
 .catalog-item-title {
@@ -328,6 +380,19 @@ main .catalog-header{
     color: #000000;
 }
 
+.catalog-item del,
+.catalog-item p{
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.catalog-item del {
+    color: #999999;
+}
+.catalog-item p{
+    color: #ffffff;
+    background-color: #ee3643;
+}
 /* Footer*/
 .main-footer{
     color: #ffffff;
@@ -362,11 +427,6 @@ main .catalog-header{
     line-height: 24px;
 }
 
-.footer-nav-list,
-.footer-offer-list{
-    list-style: none;
-}
-
 .footer-nav-list a{
     color: #ffffff;
 }
@@ -378,10 +438,6 @@ main .catalog-header{
 .footer-copyright{
     font-size: 16px;
     line-height: 18px;
-}
-
-.social-list{
-    list-style: none;
 }
 
 .btn-feedback{
