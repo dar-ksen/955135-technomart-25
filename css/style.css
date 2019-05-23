@@ -11,6 +11,7 @@ body {
 
 h1,h2,h3,h4{
     font-family: 'Curcum', Arial, sans-serif;
+    margin: 0;
 }
 
 a {
@@ -416,8 +417,26 @@ a {
     color: #ffffff;
 }
 
+.footer-nav-list a:hover,
+.footer-nav-list a:focus {
+    text-decoration: underline;
+}
+
+.footer-nav-list a:active {
+    color: rgba(255, 255, 255, .5);
+}
+
 .footer-offer-list a {
     color: #ffd180;
+}
+
+.footer-offer-list a:hover,
+.footer-offer-list a:focus {
+    text-decoration: underline;
+}
+
+.footer-offer-list a:active {
+    color: rgba(255, 209, 128, .5);
 }
 
 .footer-copyright {
