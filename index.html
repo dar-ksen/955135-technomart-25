@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -46,10 +45,41 @@
        </nav>
    </header>
 
-   <main class="container">
-    <!-- Оформлять после основного задания
-     <section class="services">
+   <main class="container"><!--
+       <section class="services">
          <h2 class="visually-hidden title">Услуги</h2>
+         <div class="services-item new">
+             <h3 class="title">Материалы</h3>
+             <a class="btn" href="#">На любой вкус</a>
+         </div>
+         <div class="services-item">
+             <h3 class="title">Инструмент</h3>
+             <a class="btn" href="#">На все случаи</a>
+         </div>
+         <div class="services-item">
+             <h3 class="title">Техника</h3>
+             <a class="btn" href="#">Для стройки</a>
+         </div>
+
+         <div class="services-slider">
+             <a class="slider-btn  slider-btn-prev" href="#">Назад</a>
+             <a class="slider-btn  slider-btn-next" href="#">Вперед</a>
+             <div class="slider-item">
+                 <h3 class="title">Дрели</h3>
+                 <p>Соседям на радость!</p>
+                 <img src="img/servSlidImg_1.jpg" width="620px" height="266px" alt="Мужик сверлющий стену к соседям">
+                 <a class="btn btn-basic" href="#">Открыть каталог</a>
+             </div>
+         </div>
+
+         <div class="services-item">
+             <h3 class="title">Скидки 50%</h3>
+             <a class="btn" href="#">Для стройки</a>
+         </div>
+         <div class="services-item">
+             <h3 class="title">Доставка</h3>
+             <a class="btn" href="#">Бесплатно</a>
+         </div>
 
      </section>
 
@@ -115,7 +145,7 @@
              <h2 class="title">Популярные производители:</h2>
              <a href="">Все производители</a>
          </div>
-         <ul class="brand-list">
+         <ul class="brand-list reset-list">
              <li class="brand-item"><a href=""><img src="img/brand-bosch.jpg" alt="Bosch"></a></li>
              <li class="brand-item"><a href=""><img src="img/brand-makita.jpg" alt="makita"></a></li>
              <li class="brand-item"><a href=""><img src="img/brand-dewalt.jpg" alt="dewalt"></a></li>
@@ -126,8 +156,14 @@
              <li class="brand-item"><a href=""><img src="img/brand-metabo.jpg" alt="metabo"></a></li>
          </ul>
      </section>
--->
-    <div class="index-columns"><!--Проверить-->
+
+     <section class="service">
+         <h2 class="title">Сервисы</h2>
+         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+     </section> -->
+
+    <div class="index-columns">
          <section class="features">
              <h2 class="title">Компания «Техномарт»</h2>
              <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -152,7 +188,7 @@
 
    </main>
 
-   <footer class="main-footer">
+   <footer class="main-footer title">
       <div class="footer-header">
           <a class="footer-logo"><img src="img/icon/logo-technomart.svg" alt="Логотип магазина ТЕХНОМАРТ"></a>
           <address class="footer-contacts">
@@ -210,7 +246,7 @@
    </footer>
 
     <section class="modal modal-write-us">
-        <h2 class="visually-hidden title">Напишите нам</h2>
+        <h2 class="visually-hidden">Напишите нам</h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
                 <label for="user-name">Ваше имя:</label>
