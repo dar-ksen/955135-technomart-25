@@ -19,8 +19,22 @@ a {
 }
 
 .title {
-    font-family: 'Curcum', Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
 }
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 /* Button */
 .btn {
@@ -30,8 +44,7 @@ a {
 }
 
 .btn-basic{
-    font-weight: 700;
-    font-family: 'Curcum', Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #ee3643;
@@ -83,8 +96,8 @@ a {
 
 /* Header */
 .main-header {
-    background-color: #f4f7f9;
-    font-family: 'Curcum', Arial, sans-serif;
+    /*background-color: #f4f7f9;*/
+    font-family: 'Cuprum', Arial, sans-serif;
 }
 
 .header-top {
@@ -157,7 +170,7 @@ a {
     background-color: #518534;
 }
 
-.header-content h1 {
+.header-title {
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
@@ -243,7 +256,6 @@ a {
 }
 
 .main-navigation {
-    margin-bottom: 60px;
     font-size: 17px;
     line-height: 17px;
     color: #ffffff;
@@ -267,6 +279,7 @@ a {
 /* Main */
 
 .index-columns h2 {
+    margin: 0;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -274,8 +287,9 @@ a {
 }
 
 .index-columns p {
-    font-size: 13px;
-    line-height: 24px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .features .trans-comp {
@@ -383,7 +397,7 @@ a {
 .main-footer {
     color: #ffffff;
     background-color: #32425c;
-    font-family: 'Curcum', Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
 }
 
 .footer-logo {
@@ -488,3 +502,341 @@ a {
     font-size: 18px;
     line-height: 18px;
 }
+
+/* ----- Сеточные стили ----- */
+
+/* Временно для сетки */
+body > * { background: rgba(255, 0, 0, 0.3); }
+body > * > * { background: rgba(255, 255, 0, 0.3); }
+body > * > * > * { background: rgba(0, 0, 255, 0.3); }
+body > * > * > * > * { background: rgba(0, 255, 255, 0.3); }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.inner-page .main-header {
+  margin-bottom: 0px;
+}
+
+.header-top {
+  /* Временно для сетки */
+  min-height: 42px;
+  background-color: transparent;
+}
+
+.header-top-wrapper {
+  display: flex;
+}
+
+.header-logo {
+  width: 220px;
+  height: 42px;
+}
+
+.search-form{
+  width: 270px;
+  /* Временно для сетки */
+  height: 42px;
+}
+
+.header-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width:450px;
+  /* Временно для сетки */
+  height: 42px;
+}
+
+.header-content {
+  display: flex;
+  /* Временно для сетки */
+  height: 158px;
+}
+
+.header-title{
+  margin: 0;
+  margin-left: 52px;
+  padding 0;
+  width:195px;
+  /* Временно для сетки */
+  height: 160px;
+}
+
+.header-contacts {
+  margin:0;
+  margin-left: 70px ;
+  width:300px;
+  /* Временно для сетки */
+  height: 160px;
+}
+
+.auth {
+  margin:0;
+  margin-left: auto;
+  padding: 0;
+  width:280px;
+  /* Временно для сетки */
+  height: 160px;
+}
+
+.account {
+  margin:0;
+  margin-left: auto;
+  padding: 0;
+  width:300px;
+  /* Временно для сетки */
+  height: 160px;
+}
+
+
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  /* Временно для сетки */
+  height: 64px;
+}
+
+.site-navigation-item {
+  margin:0;
+  padding: 0;
+  flex-grow: 1;
+  /* Временно для сетки */
+  height: 64;
+}
+
+.products {
+  margin-bottom: 55px; /*53px*/
+  /* Временно для сетки */
+  height: 410px;
+}
+
+.popular-goods {
+  margin-bottom: 20px;
+  /* Временно для сетки */
+  height: 425px;
+}
+
+.brand {
+  margin-bottom: 85px;
+  /* Временно для сетки */
+  height: 420px;
+}
+
+.service {
+  margin-bottom: 75px;
+}
+
+.service-wrapper {
+  /* Временно для сетки */
+  height: 525px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.inner-page .index-columns {
+  margin-bottom: 0px;
+}
+
+.features {
+  width: 540px;
+  /* Временно для сетки */
+  min-height: 375px;
+}
+
+.contacts {
+  width: 300px;
+  /* Временно для сетки */
+  min-height: 375px;
+}
+
+/* Catalog*/
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+   /* Временно для сетки */
+   min-height: 60px;
+}
+
+.catalog-header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  /* Временно для сетки */
+   min-height: 90px;
+}
+
+.filter {
+  width: 220px;
+  /* Временно для сетки */
+  min-height: 745px;
+}
+
+.catalog {
+  width: 700px;
+  /* Временно для сетки */
+  min-height: 1200px;
+}
+
+.sorting {
+  display: flex;
+  width: 700px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  /* Временно для сетки */
+  min-height: 40px;
+}
+
+.sorting-title {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  /* Временно для сетки */
+  min-height: 995px;
+
+}
+
+.catalog-item {
+  width:218px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  /* Временно для сетки */
+  min-height: 310px;
+}
+
+.catalog-item:nth-child(3n){
+  margin-right: 0px;
+}
+
+.pagination-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 700px;
+  /* Временно для сетки */
+  min-height: 40px;
+}
+
+.info{
+  /* Временно для сетки */
+  min-height: 260px;
+}
+
+.info-title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.main-footer {
+  /* Временно для сетки */
+  min-height: 300px;
+  background-color: transparent;
+
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-contacts {
+  width: 335px;
+  /* Временно для сетки */
+  min-height: 145px;
+}
+
+.footer-nav {
+  width: 550px;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.footer-nav-list,
+.footer-offer-list {
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright{
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-list {
+  width: 150px;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: 140px;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.social-item {
+  width: 42px;
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.feedback {
+  width: 140px;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+.develop{
+  width: 140px;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  /* Временно для сетки */
+  min-height: 115px;
+}
+
+
