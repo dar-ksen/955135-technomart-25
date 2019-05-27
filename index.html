@@ -12,7 +12,7 @@
    <header class="main-header">
      <div class="header-top">
        <div class="header-top-wrapper container">
-         <a class="header-logo"><img src="img/icon/logo-technomart.svg" width="109" height="19px" alt="Логотип магазина ТЕХНОМАРТ"></a>
+         <a class="header-logo"><img src="img/icon/logo-technomart.svg" width="109" height="19" alt="Логотип магазина ТЕХНОМАРТ"></a>
          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="header-search">Поиск</label>
           <input type="search" class="search-input" placeholder="Поиск:" id="header-search">
@@ -65,11 +65,22 @@
        </div>
 
        <div class="product-slider">
-         <a class="slider-btn  slider-btn-prev" href="#">Назад</a>
-         <a class="slider-btn  slider-btn-next" href="#">Вперед</a>
-         <div class="slider-item">
+         <input class="visually-hidden" type="radio" id="slid-1" name="product-slider" checked>
+         <input class="visually-hidden" type="radio" id="slid-2" name="product-slider">
+         <div class="product-slider-label">
+           <label for="slid-1">1</label>
+           <label for="slid-2">2</label>
+         </div>
+         <a class="slider-btn  slider-btn-prev" href="#"><span class="visually-hidden">Назад</span></a>
+         <a class="slider-btn  slider-btn-next" href="#"><span class="visually-hidden">Вперед</span></a>
+         <div class="slider-item-1">
            <h3 class="title">Дрели</h3>
            <p>Соседям на радость!</p>
+           <a class="btn btn-basic" href="#">Открыть каталог</a>
+         </div>
+         <div class="slider-item-2">
+           <h3 class="title">Перфораторы</h3>
+           <p>Настоящие мужские игрушки</p>
            <a class="btn btn-basic" href="#">Открыть каталог</a>
          </div>
        </div>
@@ -87,13 +98,37 @@
 
    <section class="popular-goods container">
      <div class="popular-goods-header">
-       <h2 class="popular-goods-title title">Популярный товары:</h2>
+       <h2 class="popular-goods-title title">Популярные товары:</h2>
        <a class="btn btn-basic" href="catalog.html">Все популярные товары</a>
      </div>
      <ul class="card-list reset-list">
-       <li class="card-item new">
+       <li class="card-item">
          <a class="card-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
-         <a href="#">
+         <a class="card-item-image" href="#">
+           <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+         </a>
+         <div class="card-item-action">
+           <a class="btn btn-buy" href="#">Купить</a>
+           <a class="btn btn-bookmark" href="#">В закладки</a>
+         </div>
+         <del class="discount">22500 Р.</del>
+         <p class="price">15500 Р.</p>
+       </li>
+       <li class="card-item">
+         <a class="card-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
+         <a class="card-item-image" href="#">
+           <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+         </a>
+         <div class="card-item-action">
+           <a class="btn btn-buy" href="#">Купить</a>
+           <a class="btn btn-bookmark" href="#">В закладки</a>
+         </div>
+         <del class="discount">22500 Р.</del>
+         <p class="price">15500 Р.</p>
+       </li>
+       <li class="card-item">
+         <a class="card-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
+         <a class="card-item-image" href="#">
            <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
          </a>
          <div class="card-item-action">
@@ -105,31 +140,7 @@
        </li>
        <li class="card-item new">
          <a class="card-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
-         <a href="#">
-           <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-         </a>
-         <div class="card-item-action">
-           <a class="btn btn-buy" href="#">Купить</a>
-           <a class="btn btn-bookmark" href="#">В закладки</a>
-         </div>
-         <del class="discount">22500 Р.</del>
-         <p class="price">15500 Р.</p>
-       </li>
-       <li class="card-item new">
-         <a class="card-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
-         <a href="#">
-           <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-         </a>
-         <div class="card-item-action">
-           <a class="btn btn-buy" href="#">Купить</a>
-           <a class="btn btn-bookmark" href="#">В закладки</a>
-         </div>
-         <del class="discount">22500 Р.</del>
-         <p class="price">15500 Р.</p>
-       </li>
-       <li class="card-item new">
-         <a class="card-item-title" href="#">Перфоратор BOSCH BFG 3000</a>
-         <a href="#">
+         <a class="card-item-image" href="#">
            <img src="img/perf_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
          </a>
          <div class="card-item-action">
@@ -164,41 +175,41 @@
       <div class="service-header container">
        <h2 class="title">Сервисы</h2>
        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-     </div>
-     <div class="index-columns container">
-       <input class="visually-hidden" type="radio" id="s-btn-1" name="service" checked>
-       <input class="visually-hidden" type="radio" id="s-btn-2" name="service">
-       <input class="visually-hidden" type="radio" id="s-btn-3" name="service">
-        <ul class="service-menu reset-list title">
-         <li>
-           <label class="service-menu-item" for="s-btn-1">Доставка</label>
-         </li>
-         <li>
-           <label class="service-menu-item" for="s-btn-2">Гарантия</label>
-         </li>
-         <li>
-           <label class="service-menu-item" for="s-btn-3">Кредит</label>
-         </li>
-       </ul>
-       <div class="service-list">
-         <div class="service-item service-item-1">
-           <h3 class="title">Доставка</h3>
-           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-           <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-         </div>
-         <div class="service-item service-item-2">
-           <h3 class="title">Гарантия</h3>
-           <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p><!--Вопрос о использовании br-->
-           <p>Дом уж восстановите как-нибудь сами.</p>
-         </div>
-         <div class="service-item service-item-3">
-           <h3 class="title">Кредит</h3>
-           <p>Залезть в долговую яму стало проще! </p>
-           <p>Кредитные консультанты придут вам на помощь.</p>
-           <a class="btn btn-basic" href="#">Отправить заявку</a>
-         </div>
-       </div>
-     </div>
+      </div>
+      <div class="index-columns container">
+        <input class="visually-hidden" type="radio" id="s-btn-1" name="service" checked>
+        <input class="visually-hidden" type="radio" id="s-btn-2" name="service">
+        <input class="visually-hidden" type="radio" id="s-btn-3" name="service">
+        <ul class="service-menu reset-list">
+          <li>
+          <label class="service-menu-item" for="s-btn-1">Доставка</label>
+          </li>
+          <li>
+          <label class="service-menu-item" for="s-btn-2">Гарантия</label>
+          </li>
+          <li>
+          <label class="service-menu-item" for="s-btn-3">Кредит</label>
+        </li>
+        </ul>
+        <div class="service-list">
+          <div class="service-item service-item-1">
+            <h3 class="title">Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+            <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          </div>
+          <div class="service-item service-item-2">
+            <h3 class="title">Гарантия</h3>
+            <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p><!--Вопрос о использовании br-->
+            <p>Дом уж восстановите как-нибудь сами.</p>
+          </div>
+          <div class="service-item service-item-3">
+            <h3 class="title">Кредит</h3>
+            <p>Залезть в долговую яму стало проще! </p>
+            <p>Кредитные консультанты придут вам на помощь.</p>
+            <a class="btn btn-basic" href="#">Отправить заявку</a>
+          </div>
+        </div>
+      </div>
 
    </section>
 
@@ -230,7 +241,7 @@
    <footer class="main-footer">
     <div class="footer-header container">
       <div class="footer-contacts">
-        <a class="footer-logo"><img src="img/icon/logo-technomart.svg" width="138px" height="23px" alt="Логотип магазина ТЕХНОМАРТ"></a>
+        <a class="footer-logo"><img src="img/icon/logo-technomart.svg" width="138" height="23" alt="Логотип магазина ТЕХНОМАРТ"></a>
         <address class="footer-contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           <a class="footer-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
