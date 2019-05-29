@@ -305,21 +305,25 @@
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="user-letter">Текст письма:</label>
-        <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="btn" type="submit">Отправить</button>
+      <div class="modal-write-us-menu">
+        <div class="write-us-user">
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="user-letter">Текст письма:</label>
+          <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме"></textarea>
+        </div>
+      </div>
+      <div class="modal-write-us-btn">
+        <button class="btn btn-basic" type="submit">Отправить</button>
+      </div>
     </form>
-    <button class="modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <button class="visually-hidden modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
   </section>
 
   <section class="modal modal-map">
@@ -327,7 +331,7 @@
       Как до нас добраться
     </h2>
     <img src="img/big-map.jpg" width="940" height="446" alt="Офис компании по адресу Большая Конюшенная 19/8, Санкт-Петербург">
-    <button class="modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <button class="visually-hidden modal-close" aria-label="Закрыть модальное окно">Закрыть</button>
   </section>
 
   </body>
