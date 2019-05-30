@@ -1312,6 +1312,7 @@ img {
 
 .filter-input {
   visibility: hidden;
+  position: absolute;
 }
 
 .filter legend {
