@@ -49,7 +49,6 @@ img {
 .new::after {
   content: '';
   position: absolute;
-  display: block;
   z-index: 2;
   width: 60px;
   height: 60px;
@@ -111,7 +110,7 @@ img {
 }
 
 .inner-page .main-header {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 /* Header top*/
@@ -136,7 +135,7 @@ img {
   height: 42px;
   background-color: #ee3643;
   position: relative;
-  box-shadow: 0px 5px 0px 0px #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .header-logo img{
@@ -156,8 +155,8 @@ img {
 }
 
 .search-form {
-  width: 270px;
   position: relative;
+  width: 270px;
 }
 
 .search-input {
@@ -171,10 +170,10 @@ img {
   border: none;
 }
 
-.search-form::before {
+.search-input + label::before {
   content: '';
   position: absolute;
-  top: 12px;
+  top: 13px;
   left: 17px;
   width: 17px;
   height: 17px;
@@ -187,21 +186,18 @@ img {
   background-color: #212a3a;
 }
 
-.search-form:hover::before{
-  opacity: 0.3;
-}
-/* Оставить на недалекое будующее
-.search-form:active::before{
-  background-position: -17px 0;
+.search-input:hover + label::before  {
+  opacity: .3;
 }
 
 .search-input:focus {
   color: #000000;
   background-color: #ffffff;
 }
-*/
-.search-input:focus > .search-form::before {
+
+.search-input:focus + label::before {
   background-position: -17px 0;
+  opacity: 1;
 }
 
 .header-list {
@@ -555,11 +551,11 @@ img {
   box-shadow: inset 0 -5px 0 #293449;
 }
 
-.site-navigation li:first-child  a{
+.site-navigation li:first-child a{
   padding-left: 50px;
 }
 
-.site-navigation li:last-child  a{
+.site-navigation li:last-child a{
   padding-right: 50px;
 }
 
@@ -589,7 +585,6 @@ img {
   height: 123px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: bisque;
   float:left;
   position: relative;
 }
@@ -766,7 +761,7 @@ img {
 .popular-goods-title {
   padding: 0;
   margin: 0;
-  margin: 30px 0px;
+  margin: 30px 0;
   margin-left: 30px;
   color: #32425c;
   text-transform: uppercase;
@@ -813,7 +808,7 @@ img {
 .card-item:hover,
 .card-item:focus {
   border-color:transparent;
-  box-shadow: 0px 10px 25px 0px rgba(41,52,73,0.5);
+  box-shadow: 0 10px 25px 0 rgba(41,52,73,0.5);
 }
 
 .card-item:hover > .card-item-image {
@@ -843,7 +838,7 @@ img {
   width: 135px;
 }
 
-.card-item-action .buy {
+.card-item-action .btn-buy {
   text-align: center;
   color: #ffffff;
   background-color: #63a63e;
@@ -854,17 +849,17 @@ img {
   margin-bottom: 8px;
 }
 
-.card-item-action .buy:hover,
-.card-item-action .buy:focus {
+.card-item-action .btn-buy:hover,
+.card-item-action .btn-buy:focus {
   background-color: #5fbb2d;
 }
 
-.card-item-action .buy:active {
+.card-item-action .btn-buy:active {
   background-color: #367315;
 
 }
 
-.card-item-action .bookmark {
+.card-item-action .btn-bookmark {
   text-align: center;
   color: #32425c;
   background-color: #ffffff;
@@ -874,13 +869,13 @@ img {
   padding: 9px 0;
 }
 
-.card-item-action .bookmark:hover,
-.card-item-action .bookmark:focus {
+.card-item-action .btn-bookmark:hover,
+.card-item-action .btn-bookmark:focus {
   background-color: #ffffff;
   border-color: #32425c;
 }
 
-.card-item-action .bookmark:active {
+.card-item-action .btn-bookmark:active {
   background-color: #ffffff;
   color: #c1c6ce;
   border-color: #c1c6ce;
@@ -942,7 +937,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: 30px;
-  margin: 30px 0px;
+  margin: 30px 0;
   margin-left: 30px;
   color: #32425c;
   text-transform: uppercase;
@@ -978,11 +973,11 @@ img {
 
 .brand-item:hover,
 .brand-item:focus{
-  box-shadow: 0px 10px 25px 0px rgba(41,52,73,0.5);
+  box-shadow: 0 10px 25px 0 rgba(41,52,73,0.5);
 }
 
 .brand-item:active{
-  box-shadow: 0px 4px 10px 0px rgba(41,52,73,0.5);
+  box-shadow: 0 4px 10px 0 rgba(41,52,73,0.5);
 }
 
 .brand-item:active > img {
@@ -1149,7 +1144,7 @@ img {
 }
 
 .inner-page .index-columns {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .features {
@@ -1210,7 +1205,7 @@ img {
 .features .btn-basic {
   display: block;
   width: 220px;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 /* Contacts*/
@@ -1234,7 +1229,7 @@ img {
 
 .contacts .btn-basic {
   display: block;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 /* Main catalog */
@@ -1293,8 +1288,6 @@ img {
 /*Filter*/
 .filter {
   width: 220px;
-  /* Временно для сетки */
-  min-height: 745px;
 }
 
 .filter h3 {
@@ -1317,6 +1310,10 @@ img {
   border-bottom: 1px solid transparent;
 }
 
+.filter-input {
+  visibility: hidden;
+}
+
 .filter legend {
   font-size: 17px;
   line-height: 30px;
@@ -1327,6 +1324,81 @@ img {
 .filter ul {
   padding: 0;
   margin: 0;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: #f7f3ec;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10xp;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .filter-option label{
@@ -1409,7 +1481,8 @@ img {
   border: 1px solid #e5e5e5;
   border-radius: 2px;
 }
-/* Catlog */
+
+/* Catalog */
 .catalog {
   width: 700px;
 }
@@ -1462,7 +1535,7 @@ img {
   content: '';
   position: absolute;
   top: -2px;
-  right: 0px;
+  right: 0;
 
   width: 0;
   height: 0;
@@ -1476,7 +1549,7 @@ img {
   content: '';
   position: absolute;
   top: -12px;
-  right: 0px;
+  right: 0;
 
   width: 0;
   height: 0;
@@ -1536,7 +1609,7 @@ img {
   height: 64px;
   background-color: #ee3643;
   position: relative;
-  box-shadow: 0px 5px 0px 0px #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .footer-logo img {
@@ -1718,7 +1791,7 @@ img {
   width: 620px;
   border-top: 7px solid #ff5257;
   margin: 0 auto;
-  box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
 }
 
 .modal-write-us-menu {
@@ -1782,26 +1855,18 @@ img {
   margin: 38px auto;
 }
 
-.modal::before {/*Опять вопрос по привязке псевдо-элементов к кнопке*/
+.modal-close {
   position: absolute;
-  content: "";
   top: 10px;
   right: 10px;
-  width: 20px;
-  height: 3px;
-  background-color: #ee3643;
-  transform: rotate(45deg);
-}
-
-.modal::after {
-  position: absolute;
-  content: "";
-  top: 10px;
-  right: 10px;
-  width: 20px;
-  height: 3px;
-  background-color: #ee3643;
-  transform: rotate(135deg);
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  background-image: url("../img/button-close.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
 }
 
 .modal-map{
@@ -1809,7 +1874,7 @@ img {
   box-sizing: border-box;
   width: 940px;
   margin: 0 auto;
-  box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
 }
 
 .modal-cart {
@@ -1818,7 +1883,7 @@ img {
   width: 620px;
   border-top: 7px solid #ff5257;
   margin: 0 auto;
-  box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
 }
 
 .modal-cart p {
@@ -1854,7 +1919,7 @@ img {
 }
 
 .modal-cart-wrapper a {
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 220px;
   margin-right: 20px;
 }
