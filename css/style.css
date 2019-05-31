@@ -296,15 +296,16 @@ img {
 .header-content {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .header-title {
   margin: 0;
   margin-left: 52px;
   padding: 0;
-  width:195px;
+  width: 195px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
@@ -313,6 +314,7 @@ img {
 .header-contacts {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
   margin-left: 75px;
   width: 270px;
@@ -321,11 +323,11 @@ img {
 }
 
 .header-contacts-phone {
-  display: block;
   box-sizing: border-box;
   padding: 11px 0 11px 74px;
+  margin-bottom: 10px;
   font-size: 21px;
-  line-height:21px;
+  line-height: 21px;
   color: #ee3643;
   outline: 3px solid #ffffff;
   position: relative;
@@ -344,7 +346,7 @@ img {
 }
 
 .header-contacts p {
-  margin-top: -10px; /*Не получается сделать ближе кроме этого*/
+  margin: 0;
   padding: 0;
   font-style: normal;
   text-align: center;
@@ -534,11 +536,15 @@ img {
 
 .site-navigation {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.site-navigation-item {
+.main-navigation li {
   display: flex;
+}
+
+.site-navigation-item {
   padding: 22px 31px;
   color: #ffffff;
   background-color: #32425c;
@@ -546,11 +552,11 @@ img {
 }
 
 .site-navigation li:first-child a{
-  padding-left: 50px;
+  padding-left: 49px;
 }
 
 .site-navigation li:last-child a{
-  padding-right: 50px;
+  padding-right: 49px;
 }
 
 .site-navigation a:hover {
@@ -810,7 +816,7 @@ img {
 .card-item:hover,
 .card-item:focus {
   border-color:transparent;
-  box-shadow: 0 10px 25px 0 rgba(41,52,73,0.5);
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, .5);
 }
 
 .card-item:hover > .card-item-image {
@@ -836,6 +842,7 @@ img {
 .card-item-action {
   position: absolute;
   top: 43px;
+  left: 40px;
   display: flex;
   flex-direction: column;
   width: 135px;
