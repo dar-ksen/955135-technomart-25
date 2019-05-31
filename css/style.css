@@ -21,13 +21,11 @@ img {
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -55,9 +53,8 @@ img {
   background-image: url('../img/new-flag.png');
   background-position: 0 0;
   background-repeat: no-repeat;
-  top:0;
+  top: 0;
   right: 0;
-
 }
 
 /* Button */
@@ -228,7 +225,6 @@ img {
   left: 17px;
   width: 14px;
   height: 16px;
-
   background-image: url('../img/icon/icon-bookmark.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -246,7 +242,6 @@ img {
   left: 28px;
   width: 15px;
   height: 15px;
-
   background-image: url('../img/icon/cart-icon.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -268,7 +263,7 @@ img {
 .header-list-bookmark:hover::before,
 .header-list-bookmark:focus::before,
 .header-list-cart:hover::before,
-.header-list-cart:focus::before{
+.header-list-cart:focus::before {
   opacity: .5;
 }
 
@@ -278,7 +273,7 @@ img {
 }
 
 .header-list-bookmark:active::before,
-.header-list-cart:active::before{
+.header-list-cart:active::before {
   opacity: .3;
 }
 
@@ -364,7 +359,7 @@ img {
   margin:0;
   margin-left: auto;
   padding: 0;
-  width:280px;
+  width: 280px;
 }
 
 .login-link,
@@ -623,7 +618,7 @@ img {
 .product-technique,
 .product-discount,
 .product-delivery {
-  float:right;
+  float: right;
   margin-right: 0;
 }
 
@@ -651,7 +646,7 @@ img {
 
 .product-slider{
   width: 620px;
-  float:left;
+  float: left;
   position: relative;
 }
 
@@ -779,7 +774,6 @@ img {
   color: #32425c;
   text-transform: uppercase;
   font-weight: 400;
-
   font-size: 30px;
   line-height: 30px;
 }
@@ -787,7 +781,6 @@ img {
 .popular-goods-header a {
   width: 250px;
   padding: 10px 0;
-
   margin-right: 25px;
 }
 
@@ -917,7 +910,6 @@ img {
   margin-bottom: 22px;
   border-radius: 3px;
   box-sizing: border-box;
-
   color: #ffffff;
   background-color: #ee3643;
 
@@ -930,7 +922,7 @@ img {
   right: -25px;
   width: 0;
   height: 0;
-  border: 19px solid white;
+  border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
 
@@ -1291,7 +1283,6 @@ img {
   text-transform: uppercase;
   color:#32425c;
   background-color: #f2f6f8;
-
 }
 
 /*Filter*/
@@ -1434,7 +1425,7 @@ img {
 }
 
 .filter-input-checkbox + label::before {
-  content: "";
+  content: '';
   left: 0;
   top: 9px;
   position: absolute;
@@ -1446,7 +1437,7 @@ img {
 }
 
 .filter-input-checkbox:checked + label::after {
-  content: "";
+  content: '';
   left: 0;
   top: 9px;
   position: absolute;
@@ -1458,26 +1449,23 @@ img {
 }
 
 .filter-input-radio + label::after {
-  content: "";
+  content: '';
   box-sizing: border-box;
   top:8px;
   left: 0;
   position: absolute;
-
   width: 25px;
   height: 25px;
-
   border: 4px solid #c5c5c5;
   border-radius: 50%;
 }
 
 .filter-input-radio:checked + label::before {
-  content: "";
+  content: '';
   box-sizing: border-box;
   top: 16px;
   left: 8px;
   position: absolute;
-
   width: 9px;
   height: 9px;
   background-color: #c5c5c5;
@@ -1513,7 +1501,6 @@ img {
 .sorting {
   display: flex;
   align-items: center;
-  width: 700px;
   height: 38px;
   margin: 0;
   padding: 0;
@@ -1891,8 +1878,8 @@ img {
   margin-bottom: 20px;
 }
 
-.write-us-form input[type="text"],
-.write-us-form input[type="email"] {
+.write-us-form input[type='text'],
+.write-us-form input[type='email'] {
   display: flex;
   padding: 12px 0 12px 15px;
   box-sizing: border-box;
@@ -1944,7 +1931,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  background-image: url("../img/button-close.png");
+  background-image: url('../img/button-close.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
@@ -1970,7 +1957,7 @@ img {
 
 .modal-cart p {
   position: relative;
-  margin:0;
+  margin: 0;
   margin-bottom: 68px;
   margin-top: 60px;
   font-size: 30px;
@@ -1982,7 +1969,7 @@ img {
 .modal-cart p::before {
   content: '';
   position: absolute;
-  top:-15px;
+  top: -15px;
   left: 95px;
   width: 66px;
   height: 66px;
