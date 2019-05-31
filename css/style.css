@@ -293,7 +293,7 @@ img {
   background-color: #5fbb2d;
 }
 
-.header-list-order::active {
+.header-list-order:active {
   color: rgba(255, 255, 255, .5);
   background-color: #518534;
 }
@@ -928,17 +928,14 @@ img {
   position: absolute;
   top: 0;
   right: -25px;
-
   width: 0;
   height: 0;
-
   border: 19px solid white;
   border-left-color: #ee3643;
 }
 
 .brand {
   margin-bottom: 65px;
-
 }
 
 .brand-header {
@@ -958,10 +955,6 @@ img {
   color: #32425c;
   text-transform: uppercase;
   font-weight: 400;
-
-  font-size: 30px;
-  line-height: 30px;
-
   font-size: 30px;
   line-height: 30px;
 }
@@ -969,7 +962,6 @@ img {
 .brand-header a {
   width: 250px;
   padding: 10px 0;
-
   margin-right: 25px;
 }
 
@@ -979,7 +971,7 @@ img {
   justify-content: space-between;
 }
 
-.brand-item{
+.brand-item {
   width: 218px;
   height: 145px;
   margin-bottom: 20px;
@@ -1013,7 +1005,7 @@ img {
   background-color: #f4f8fa;
 }
 
-.service-header{
+.service-header {
   margin-bottom: 68px;
 }
 
@@ -1055,7 +1047,7 @@ img {
   background-position: 0 0;
 }
 
-.service-menu-item{
+.service-menu-item {
   display: block;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
@@ -1102,15 +1094,15 @@ img {
   min-height: 265px;
 }
 
-.service-item-1 p:nth-child(2){
+.service-item-1 p:nth-child(2) {
   width: 275px;
 }
 
-.service-item-1 p:nth-child(3){
+.service-item-1 p:nth-child(3) {
   width: 175px;
 }
 
-.service-item-2 p:nth-child(2){
+.service-item-2 p:nth-child(2) {
   width: 375px;
 }
 
@@ -1128,7 +1120,7 @@ img {
   min-height: 265px;
 }
 
-.service-item-3 a{
+.service-item-3 a {
   display: block;
   width: 195px;
   padding: 6px 0;
@@ -1149,7 +1141,7 @@ img {
 
 #s-btn-1:checked ~ .service-list .service-item-1,
 #s-btn-2:checked ~ .service-list .service-item-2,
-#s-btn-3:checked ~ .service-list .service-item-3{
+#s-btn-3:checked ~ .service-list .service-item-3 {
   display: block;
 }
 /*Features*/ /* index-columns часто используется нужно или переименовать либо вынести вверх */
@@ -1230,7 +1222,7 @@ img {
 }
 
 
-.contacts p{
+.contacts p {
   margin: 0;
   margin-bottom: 30px;
   font-size: 13px;
@@ -1446,10 +1438,8 @@ img {
   left: 0;
   top: 9px;
   position: absolute;
-
   width: 23px;
   height: 23px;
-
   background-image: url('../img/icon/checkbox-off.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1460,10 +1450,8 @@ img {
   left: 0;
   top: 9px;
   position: absolute;
-
   width: 27px;
   height: 23px;
-
   background-image: url('../img/icon/checkbox-on.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1554,7 +1542,6 @@ img {
   justify-content: space-between;
   margin-left: 140px;
   display: flex;
-
 }
 
 .sorting-atribut a {
@@ -1582,15 +1569,13 @@ img {
   position: relative;
 }
 
-.sorting .increase::before{
+.sorting .increase::before {
   content: '';
   position: absolute;
   top: -7px;
   left: -65px;
-
   width: 0;
   height: 0;
-
   border: 10px solid transparent;
   border-bottom-color: #c5c5c5;
   transform: translateY(-50%) scaleX(0.6);
@@ -1601,13 +1586,11 @@ img {
   position: absolute;
   top: -17px;
   left: -32px;
-
   width: 0;
   height: 0;
-
   border: 10px solid transparent;
   border-bottom-color: #c5c5c5;
-  transform: rotate(180deg)translateY(-50%) scaleX(0.6);
+  transform: rotate(180deg) translateY(-50%) scaleX(0.6);
 }
 
 .sorting-directions .sorting-active::before {
@@ -1685,7 +1668,7 @@ img {
   margin: 0;
 }
 
-.info:last-child{
+.info:last-child {
   padding-bottom: 68px;
 }
 
@@ -1752,7 +1735,7 @@ img {
   margin: 0;
 }
 
-.footer-nav-list{
+.footer-nav-list {
   padding-top: 40px;
 }
 
@@ -1792,7 +1775,7 @@ img {
 }
 
 /*Footer-bottom*/
-.footer-bottom-wrapper{
+.footer-bottom-wrapper {
   background-color: #293449;
 }
 
@@ -1837,7 +1820,7 @@ img {
 }
 
 .social-btn:hover,
-.social-btn:focus{
+.social-btn:focus {
   background-color: #ee3643;
 }
 
@@ -1884,7 +1867,7 @@ img {
   background-color: #ffffff;
 }
 
-.modal-write-us{
+.modal-write-us {
   position: relative;
   box-sizing: border-box;
   width: 620px;
@@ -1968,7 +1951,7 @@ img {
   cursor: pointer;
 }
 
-.modal-map{
+.modal-map {
   position: relative;
   box-sizing: border-box;
   width: 940px;
@@ -1996,7 +1979,7 @@ img {
   padding-left: 180px;
 }
 
-.modal-cart p::before{
+.modal-cart p::before {
   content: '';
   position: absolute;
   top:-15px;
