@@ -1537,19 +1537,19 @@ img {
   text-transform: uppercase
 }
 
-.sorting-atribut {
+.sorting-mark {
   width: 355px;
   justify-content: space-between;
   margin-left: 140px;
   display: flex;
 }
 
-.sorting-atribut a {
+.sorting-mark a {
   color: rgba(0, 0, 0, .5);
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-atribut .sorting-active {
+.sorting-mark .sorting-active {
   color: #ee3643;
   border-bottom-color: transparent;
 }
