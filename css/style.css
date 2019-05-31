@@ -121,6 +121,7 @@ img {
 
 .header-top-wrapper {
   display: flex;
+  align-items: stretch;
 }
 
 .header-top a {
@@ -129,7 +130,6 @@ img {
 
 .header-logo {
   width: 220px;
-  height: 42px;
   background-color: #ee3643;
   position: relative;
   box-shadow: 0 5px 0 0 #b52933;
@@ -153,13 +153,12 @@ img {
 
 .search-form {
   position: relative;
+  display: flex;
   width: 270px;
 }
 
 .search-input {
-  display: block;
   width: inherit;
-  padding: 12px 0;
   padding-left: 50px;
   font: inherit;
   color: #ffffff;
