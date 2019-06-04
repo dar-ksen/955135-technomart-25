@@ -166,6 +166,10 @@ img {
   border: none;
 }
 
+.search-input::placeholder {
+  color: #ffffff;
+}
+
 .search-input + label::before {
   content: '';
   position: absolute;
@@ -494,7 +498,7 @@ img {
   background-image: url(../img/icon-logout.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .logout:hover::before,
@@ -983,11 +987,11 @@ img {
 
 .brand-item:hover,
 .brand-item:focus{
-  box-shadow: 0 10px 25px 0 rgba(41,52,73,0.5);
+  box-shadow: 0 10px 25px 0 rgba(41,52,73,.5);
 }
 
 .brand-item:active{
-  box-shadow: 0 4px 10px 0 rgba(41,52,73,0.5);
+  box-shadow: 0 4px 10px 0 rgba(41,52,73,.5);
 }
 
 .brand-item:active > img {
@@ -1587,7 +1591,7 @@ img {
   height: 0;
   border: 10px solid transparent;
   border-bottom-color: #c5c5c5;
-  transform: translateY(-50%) scaleX(0.6);
+  transform: translateY(-50%) scaleX(.6);
 }
 
 .sorting .decrease::before{
@@ -1599,7 +1603,7 @@ img {
   height: 0;
   border: 10px solid transparent;
   border-bottom-color: #c5c5c5;
-  transform: rotate(180deg) translateY(-50%) scaleX(0.6);
+  transform: rotate(180deg) translateY(-50%) scaleX(.6);
 }
 
 .sorting-directions .sorting-active::before {
@@ -1888,13 +1892,13 @@ img {
 }
 
 .modal-write-us {
-  top: 50px;
+  top: 50%;
   left: 50%;
   box-sizing: border-box;
   width: 620px;
   border-top: 7px solid #ff5257;
-  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
-  transform: translateX(-50%);
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.5);
+  transform: translate(-50%, -50%);
 }
 
 .modal-write-us-menu {
@@ -1962,29 +1966,22 @@ img {
   position: absolute;
   top: 0;
   right: 0px;
-
   width: 22px;
   height: 22px;
-
   font-size: 0;
-
   background-color: transparent;
   border: 0;
-
   cursor: pointer;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
-
   position: absolute;
   top: 16px;
   right: 9px;
-
   width: 28px;
   height: 5px;
-
   background-color: #ee3643;
 }
 
@@ -1997,12 +1994,11 @@ img {
 }
 
 .modal-map {
-  top: 50px;
+  top: 50%;
   left: 50%;
-  box-sizing: border-box;
   width: 940px;
-  box-shadow: 0 0 16px 8px rgba(0,0,0,0.5);
-  transform: translateX(-50%);
+  box-shadow: 0 0 16px 8px rgba(0,0,0,.5);
+  transform: translate(-50%, -50%);
 }
 
 .modal-cart {
@@ -2011,8 +2007,8 @@ img {
   box-sizing: border-box;
   width: 620px;
   border-top: 7px solid #ff5257;
-  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.5);
-  transform: translateX(-50%) translateY(-50%);;
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,.5);
+  transform: translate(-50%, -50%);
 }
 
 .modal-cart p {
