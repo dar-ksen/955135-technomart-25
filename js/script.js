@@ -1,12 +1,38 @@
-var popup = document.querySelector('.modal-write-us');
-var openPopupButton = document.querySelector('.btn-write-us');
-var closePopupButton = popup.querySelector('.modal-close');
+var writeUs = document.querySelector('.modal-write-us');
+var openWriteUs = document.querySelector('.btn-write-us');
+var closeWriteUs = writeUs.querySelector('.modal-close');
 
-openPopupButton.addEventListener('click', function (evt) {
+openWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.add('modal--show');
+  writeUs.classList.add('modal--show');
 });
 
-closePopupButton.addEventListener('click', function () {
-  popup.classList.remove('modal--show');
+closeWriteUs.addEventListener('click', function () {
+  writeUs.classList.remove('modal--show');
 });
+
+var modalMap = document.querySelector('.modal-map');
+var openModalMap = document.querySelector('.contacts-image');
+var closeModalMap = modalMap.querySelector('.modal-close');
+
+openModalMap.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalMap.classList.add('modal--show');
+});
+
+closeModalMap.addEventListener('click', function () {
+  modalMap.classList.remove('modal--show');
+});
+
+/*var modalCart = document.querySelector('.modal-cart');
+var openModalCart = document.querySelector('.btn-buy');
+var closeModalCart = modalCart.querySelector('.modal-close');
+
+openModalCart.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalCart.classList.add('modal--show');
+});
+
+closeModalCart.addEventListener('click', function () {
+  modalCart.classList.remove('modal--show');
+});*/
