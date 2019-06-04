@@ -1,3 +1,13 @@
-var popap = document.querySelector('section.modal');
+var popap = document.querySelector('.modal-write-us');
+var openPopupButton = document.querySelector('.btn-write-us');
+var closePopupButton = popup.querySelector('.modal-close');
 
-popup.classList.add('modal--show');
+openPopupButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  alert('Клик по кнопке');
+  popup.classList.add('modal--show');
+});
+
+closePopupButton.addEventListener('click', function () {
+  popup.classList.remove('modal--show');
+});
