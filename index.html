@@ -307,15 +307,15 @@
       <div class="modal-write-us-menu">
         <div class="write-us-user">
           <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" value="" required>
         </div>
         <div>
           <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+          <input id="user-email" type="email" name="email" placeholder="email@example.com" required>
         </div>
         <div>
           <label for="user-letter">Текст письма:</label>
-          <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме"></textarea>
+          <textarea id="user-letter" name="letter" rows="7" placeholder="В свободной форме" required></textarea>
         </div>
       </div>
       <div class="modal-write-us-btn">
@@ -327,9 +327,20 @@
 
   <section class="modal modal-map">
     <h2 class="visually-hidden title">Как до нас добраться</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCCtu2YJ" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
     <img src="img/big-map.jpg" width="940" height="446" alt="Офис компании по адресу Большая Конюшенная 19/8, Санкт-Петербург">
-    <button class="modal-close" aria-label="Закрыть модальное окно"></button>
+    <button class="modal-close" aria-label="Закрыть модальное окно"></button><!--Добавить задним фоном, проверить тень-->
   </section>
-  <script src="js/script.js"></script>
+
+   <section class="modal modal-cart">
+     <h2 class="visually-hidden title">Добавление товара в корзину</h2>
+     <p>Товар добавлен в корзину!</p>
+     <div class="modal-cart-wrapper">
+       <a class="btn btn-basic" href="#">Оформить заказ</a>
+       <button class="btn btn-continue" type="button">Продолжить покупки</button>
+     </div>
+     <button class="modal-close" aria-label="Закрыть модальное окно"></button>
+   </section>
+   <script src="js/script.js"></script>
   </body>
 </html>

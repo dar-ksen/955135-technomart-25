@@ -112,7 +112,7 @@ img {
 
 /* Header top*/
 .header-top {
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -312,7 +312,7 @@ img {
 .header-content {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 
 .header-title {
@@ -331,7 +331,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 270px;
+  width: 265px;
   margin: 0;
   margin-left: 70px;
   font-style: normal;
@@ -342,7 +342,7 @@ img {
   position: relative;
   box-sizing: border-box;
   margin-bottom: 10px;
-  padding: 11px 0 11px 72px;
+  padding: 10px 0 10px 72px;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -383,7 +383,7 @@ img {
 .check-in {
   display: block;
   box-sizing: border-box;
-  padding: 12px 0;
+  padding: 10px 0 14px 0;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -399,7 +399,7 @@ img {
 .login-link::before {
   content: '';
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 14px;
   width: 20px;
   height: 17px;
@@ -553,7 +553,6 @@ img {
 .site-navigation {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .main-navigation li {
@@ -568,11 +567,11 @@ img {
 }
 
 .site-navigation li:first-child a{
-  padding-left: 49px;
+  padding-left: 50px;
 }
 
 .site-navigation li:last-child a{
-  padding-right: 49px;
+  padding-right: 50px;
 }
 
 .site-navigation a:hover {
@@ -751,6 +750,7 @@ img {
 
 .product-slider-label label {
   display: inline-block;
+  vertical-align: top;
   width: 6px;
   height: 6px;
   border: 2px solid #ffffff;
@@ -1891,14 +1891,34 @@ img {
   display: block;
 }
 
+@keyframes go-top {
+  0% {
+    transform: translateX(-50%) translateY(100px);
+  }
+
+  70% {
+    transform: translateX(-50%)  translateY(30px);
+  }
+
+  90% {
+    transform: translateX(-50%)  translateY(10px);
+  }
+
+  100% {
+    transform: translateX(-50%)  translateY(0);
+  }
+}
+
 .modal-write-us {
-  top: 50%;
+  top: 100px;
   left: 50%;
   box-sizing: border-box;
   width: 620px;
   border-top: 7px solid #ff5257;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,.5);
-  transform: translate(-50%, -50%);
+  animation-duration: .8s;
+  animation-fill-mode: both;
+  animation-name: go-top;
 }
 
 .modal-write-us-menu {
@@ -1993,22 +2013,53 @@ img {
   transform: rotate(-45deg);
 }
 
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .modal-map {
   top: 50%;
   left: 50%;
   width: 940px;
   box-shadow: 0 0 16px 8px rgba(0,0,0,.5);
   transform: translate(-50%, -50%);
+  animation-duration: .55s;
+  animation-fill-mode: both;
+  animation-name: appearance;
+}
+
+.modal-map img{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -1;
+}/* Может лучше сделать visually hidden*/
+
+@keyframes go-bottom {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .modal-cart {
-  top: 50%;
-  left: 50%;
+  top: 200px;
+  left: 35%;
   box-sizing: border-box;
   width: 620px;
   border-top: 7px solid #ff5257;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,.5);
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  animation-duration: .55s;
+  animation-fill-mode: both;
+  animation-name: go-bottom;
 }
 
 .modal-cart p {
