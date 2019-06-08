@@ -64,7 +64,7 @@ img {
   vertical-align: middle;
 }
 
-.btn-basic{
+.btn-basic {
   font-family: 'Cuprum', Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -91,11 +91,11 @@ img {
 }
 
 .btn-product:hover,
-.btn-product:focus{
+.btn-product:focus {
   background-color: rgba(0, 0, 0, .2);
 }
 
-.btn-product:active{
+.btn-product:active {
   background-color: rgba(0, 0, 0, .3);
 }
 
@@ -217,12 +217,12 @@ img {
   background-color: #293449;
 }
 
-.header-list-bookmark{
+.header-list-bookmark {
   width: 150px;
   padding-left: 45px;
 }
 
-.header-list-bookmark::before{
+.header-list-bookmark::before {
   content: '';
   position: absolute;
   top: 12px;
@@ -244,7 +244,7 @@ img {
   background-color: #ee3643;
 }
 
-.header-list-cart::before{
+.header-list-cart::before {
   content: '';
   position: absolute;
   top:12px;
@@ -283,7 +283,7 @@ img {
 }
 
 .header-list-bookmark:active,
-.header-list-basket:active{
+.header-list-basket:active {
   background-color: #161d29;
 }
 
@@ -312,7 +312,7 @@ img {
 .header-content {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .header-title {
@@ -417,12 +417,12 @@ img {
 .login-link:hover,
 .login-link:focus,
 .check-in:hover,
-.check-in:focus{
+.check-in:focus {
   color: #ee3643;
 }
 
 .login-link:hover::before,
-.login-link:focus::before{
+.login-link:focus::before {
   opacity: 1;
 }
 
@@ -431,7 +431,7 @@ img {
   color: rgba(0, 0, 0, .3);
 }
 
-.login-link:active::before{
+.login-link:active::before {
   opacity: .5;
 }
 
@@ -526,7 +526,7 @@ img {
   padding-left: 17px;
 }
 
-.account .link--cart::after{
+.account .link--cart::after {
   content: '';
   position: absolute;
   top: 6px;
@@ -554,8 +554,11 @@ img {
 }
 
 .site-navigation {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 #293449;
 }
 
 .main-navigation li {
@@ -563,18 +566,10 @@ img {
 }
 
 .site-navigation-item {
-  padding: 21px 31px 22px 31px;
+  padding: 20px 31px 23px 31px;
   color: #ffffff;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
-}
-
-.site-navigation li:first-child a{
-  padding-left: 50px;
-}
-
-.site-navigation li:last-child a{
-  padding-right: 50px;
 }
 
 .site-navigation a:hover {
@@ -645,7 +640,7 @@ img {
   margin-right: 0;
 }
 
-.product-technique{
+.product-technique {
   background-color: #dc91d8;
   background-repeat: no-repeat;
   background-position: 190px 30px;
@@ -659,20 +654,20 @@ img {
   background-image: url(../img/discount.svg);
 }
 
-.product-delivery{
+.product-delivery {
   background-color: #ffc047;
   background-repeat: no-repeat;
   background-position: 190px 32px;
   background-image: url(../img/delivery.svg);
 }
 
-.product-slider{
+.product-slider {
   position: relative;
   float: left;
   width: 620px;
 }
 
-.product-slider h3{
+.product-slider h3 {
   padding-top: 25px;
   padding-left: 25px;
   margin: 0;
@@ -722,7 +717,7 @@ img {
   transform: translateY(-50%);
 }
 
-.slider-btn::after{
+.slider-btn::after {
   content: '';
   display: block;
   width: 25px;
@@ -934,7 +929,7 @@ img {
   background-color: #ee3643;
 }
 
-.price::before{
+.price::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1011,11 +1006,11 @@ img {
 }
 
 .brand-item:hover,
-.brand-item:focus{
+.brand-item:focus {
   box-shadow: 0 10px 25px 0 rgba(41,52,73,.5);
 }
 
-.brand-item:active{
+.brand-item:active {
   box-shadow: 0 4px 10px 0 rgba(41,52,73,.5);
 }
 
@@ -1053,7 +1048,7 @@ img {
   line-height: 24px;
 }
 
-.service-menu{
+.service-menu {
   position: relative;
   width: 240px;
   margin: 0;
@@ -1443,7 +1438,7 @@ img {
   padding-bottom: 10px;
 }
 
-.filter-option label{
+.filter-option label {
   position: relative;
   display: block;
   font-size: 15px;
@@ -1608,7 +1603,7 @@ img {
   transform: translateY(-50%) scaleX(.6);
 }
 
-.sorting .decrease::before{
+.sorting .decrease::before {
   content: '';
   position: absolute;
   top: -17px;
@@ -1869,7 +1864,7 @@ img {
   line-height: 18px;
 }
 
-.develop{
+.develop {
   display: block;
   width: 110px;
   padding: 0;

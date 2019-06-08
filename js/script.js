@@ -1,4 +1,3 @@
-
 if (document.querySelector('.modal-write-us')) {
   var writeUs = document.querySelector('.modal-write-us'),
       form    = writeUs.querySelector('form'),
@@ -76,7 +75,6 @@ var closeModalCarts = modalCart.querySelector('.modal-close');
 var continueModalCarts = modalCart.querySelector('.btn-continue');
 var carts = document.querySelector('.card-list');
 
-
 carts.onclick = function(evt) {
   var target = evt.target;
   if (!event.target.classList.contains('btn-buy')) return;
@@ -100,27 +98,3 @@ window.addEventListener('keydown', function (evt){
     }
   }
 });
-
-
-/*var modalCart = document.querySelector('.modal-cart');
-var openModalCarts = document.querySelectorAll('.btn-buy');
-var closeModalCarts = modalCart.querySelector('.modal-close');
-var continueModalCarts = modalCart.querySelector('.btn-continue');
-
-for (var i = 0; i < openModalCarts.length; i++){
-  var openModalCart = openModalCarts[i];
-  openModalCart.addEventListener('click', clickModalCart);
-}
-
-function clickModalCart(evt) {
-  evt.preventDefault();
-  modalCart.classList.add('modal--show');
-}
-
-closeModalCarts.addEventListener('click', function () {
-  modalCart.classList.remove('modal--show');
-});
-
-continueModalCarts.addEventListener('click', function () {
-  modalCart.classList.remove('modal--show');
-});*/
