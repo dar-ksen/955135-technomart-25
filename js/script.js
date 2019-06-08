@@ -22,7 +22,7 @@ if (document.querySelector('.modal-write-us')) {
   openWriteUs.addEventListener('click', function (evt) {
     evt.preventDefault();
     writeUs.classList.add('modal--show');
-    if (isStorageSupport) {
+    if (isStorageSupport&&localStorage.getItem("userName")) {
       userName.value = localStorage.getItem("userName");
       userEmail.value = localStorage.getItem("userEmail");
       userLetter.focus();
