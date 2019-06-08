@@ -112,7 +112,7 @@ img {
 
 /* Header top*/
 .header-top {
-  margin-bottom: 49px;
+  margin-bottom: 46px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -218,7 +218,7 @@ img {
 }
 
 .header-list-bookmark{
-  width: 140px;
+  width: 150px;
   padding-left: 45px;
 }
 
@@ -236,8 +236,8 @@ img {
 }
 
 .header-list-cart {
-  width: 160px;
-  padding-left: 60px;
+  width: 150px;
+  padding-left: 50px;
 }
 
 .inner-page .header-list-cart {
@@ -248,7 +248,7 @@ img {
   content: '';
   position: absolute;
   top:12px;
-  left: 28px;
+  left: 18px;
   width: 15px;
   height: 15px;
   background-image: url('../img/cart-icon.svg');
@@ -318,6 +318,7 @@ img {
 .header-title {
   width: 200px;
   margin: 0;
+  margin-top: 3px;
   margin-left: 52px;
   padding: 0;
   font-style: italic;
@@ -333,6 +334,7 @@ img {
   justify-content: flex-start;
   width: 265px;
   margin: 0;
+  margin-top: 3px;
   margin-left: 70px;
   font-style: normal;
   color: #32425c;
@@ -446,6 +448,7 @@ img {
   position: relative;
   display: flex;
   width: 300px;
+  margin: 0;
   margin-bottom: 8px;
   background-color: #ffffff;
 }
@@ -527,7 +530,7 @@ img {
   content: '';
   position: absolute;
   top: 6px;
-  left: 106px;
+  left: 108px;
   width: 5px;
   height: 5px;
   background-color: #32425c;
@@ -545,7 +548,7 @@ img {
 
 /*Main-navigation*/
 .main-navigation {
-  padding-bottom: 58px;
+  padding-bottom: 59px;
   font-size: 17px;
   line-height: 17px;
 }
@@ -560,7 +563,7 @@ img {
 }
 
 .site-navigation-item {
-  padding: 20px 31px 24px 31px;
+  padding: 21px 31px 22px 31px;
   color: #ffffff;
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 #293449;
@@ -979,10 +982,32 @@ img {
 .brand-item {
   position: relative;
   box-sizing: border-box;
-  width: 218px;
+  width: 220px;
   height: 145px;
   margin-bottom: 20px;
   border: 1px solid #ebebeb;
+}
+
+.brand-item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand-item-dewalt img {
+  top: 48px;
+  transform: translateX(-50%);
+}
+
+.brand-item-interscol img {
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.brand-item-metabo img {
+  top: 32px;
+  transform: translateX(-50%);
 }
 
 .brand-item:hover,
@@ -998,12 +1023,6 @@ img {
   opacity: .3;
 }
 
-.brand-item img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /*Service*/
 .service {
@@ -1513,11 +1532,6 @@ img {
   border-radius: 2px;
   cursor: pointer;
 }
-/*не указано в stylegaid*/
-.filter-btn:hover,
-.filter-btn:focus {
-  background-color: #d4d4d4;
-}
 
 /* Catalog */
 .catalog {
@@ -1621,7 +1635,7 @@ img {
   display: flex;
   align-items: center;
   margin: 0;
-  margin-top: 24px;
+  margin-top: 26px;
   margin-bottom: 56px;
   padding: 0;
 }
@@ -1893,17 +1907,14 @@ img {
 
 @keyframes go-top {
   0% {
-    transform: translateX(-50%) translateY(100px);
+    transform: translateX(-50%) translateY(200px);
   }
-
   70% {
-    transform: translateX(-50%)  translateY(30px);
+    transform: translateX(-50%)  translateY(-20px);
   }
-
   90% {
     transform: translateX(-50%)  translateY(10px);
   }
-
   100% {
     transform: translateX(-50%)  translateY(0);
   }
@@ -2026,32 +2037,29 @@ img {
   top: 50%;
   left: 50%;
   width: 940px;
-  box-shadow: 0 0 16px 8px rgba(0,0,0,.5);
+  height: 446px;
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.5);
+  background-image: url('../img/big-map.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
   transform: translate(-50%, -50%);
   animation-duration: .55s;
   animation-fill-mode: both;
   animation-name: appearance;
 }
 
-.modal-map img{
-  position: absolute;
-  top:0;
-  left: 0;
-  z-index: -1;
-}/* Может лучше сделать visually hidden*/
-
 @keyframes go-bottom {
   0% {
-    transform: translateY(-200px);
+    transform: translateX(-50%) translateY(-200px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
   }
 }
 
 .modal-cart {
   top: 200px;
-  left: 35%;
+  left: 50%;
   box-sizing: border-box;
   width: 620px;
   border-top: 7px solid #ff5257;
@@ -2120,8 +2128,4 @@ img {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-}
-
-.modal-cart-wrapper .btn-continue:hover {
-  background-color: #b5b5b5; /*Не указано в stylgaid*/
 }
