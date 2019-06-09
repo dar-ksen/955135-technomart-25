@@ -10,7 +10,6 @@ if (document.querySelector('.modal-write-us')) {
       openModalMap = document.querySelector('.contacts-image'),
       closeModalMap = modalMap.querySelector('.modal-close');
 
-
   var isStorageSupport = true;
   var storage = "";
   try {
@@ -21,7 +20,7 @@ if (document.querySelector('.modal-write-us')) {
 
   openWriteUs.addEventListener('click', function (evt) {
     evt.preventDefault();
-    writeUs.classList.add('modal--show');
+    writeUs.classList.add('modal-show');
     if (isStorageSupport&&localStorage.getItem("userName")) {
       userName.value = localStorage.getItem("userName");
       userEmail.value = localStorage.getItem("userEmail");
@@ -32,7 +31,7 @@ if (document.querySelector('.modal-write-us')) {
   });
 
   closeWriteUs.addEventListener('click', function () {
-    writeUs.classList.remove('modal--show');
+    writeUs.classList.remove('modal-show');
   });
 
   form.addEventListener('submit', function (evt){
@@ -50,21 +49,21 @@ if (document.querySelector('.modal-write-us')) {
 
   openModalMap.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modalMap.classList.add('modal--show');
+    modalMap.classList.add('modal-show');
   });
 
   closeModalMap.addEventListener('click', function () {
-    modalMap.classList.remove('modal--show');
+    modalMap.classList.remove('modal-show');
   });
 
   window.addEventListener('keydown', function (evt){
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (writeUs.classList.contains('modal--show')) {
-      writeUs.classList.remove('modal--show');
+    if (writeUs.classList.contains('modal-show')) {
+      writeUs.classList.remove('modal-show');
     }
-    if (modalMap.classList.contains('modal--show')) {
-      modalMap.classList.remove('modal--show');
+    if (modalMap.classList.contains('modal-show')) {
+      modalMap.classList.remove('modal-show');
     }
   }
 });
@@ -79,22 +78,22 @@ carts.onclick = function(evt) {
   var target = evt.target;
   if (!event.target.classList.contains('btn-buy')) return;
   evt.preventDefault();
-  modalCart.classList.add('modal--show');
+  modalCart.classList.add('modal-show');
 }
 
 closeModalCarts.addEventListener('click', function () {
-  modalCart.classList.remove('modal--show');
+  modalCart.classList.remove('modal-show');
 });
 
 continueModalCarts.addEventListener('click', function () {
-  modalCart.classList.remove('modal--show');
+  modalCart.classList.remove('modal-show');
 });
 
 window.addEventListener('keydown', function (evt){
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modalCart.classList.contains('modal--show')) {
-      modalCart.classList.remove('modal--show');
+    if (modalCart.classList.contains('modal-show')) {
+      modalCart.classList.remove('modal-show');
     }
   }
 });
